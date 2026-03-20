@@ -1,4 +1,5 @@
-from src.inventario import agregar_producto
+from src.inventario import agregar_producto, mostrar_invenatrio
+
 """
 # definir variables:
 i = 0
@@ -34,32 +35,31 @@ while True:
 """
 
 while True:
-        print ("menu:")
-        print("1-agregar un producto")
-        print("2-mostrar el inventario")
-        print("3-agregar producto")
-        print("5-quitar producto")
-        print("5-calculo de la estadistica")
-        print("6-salir")
-        opcion = input("ingrese una opcion:")
+    print ("menu:")
+    print("1-agregar un producto")
+    print("2-mostrar el inventario")
+    print("5-quitar producto")
+    print("5-calculo de la estadistica")
+    print("6-salir")
+    opcion = input("ingrese una opcion:")
 
 
-        if opcion == "1":
-                agregar_producto()
+    if opcion == "1":
+            agregar_producto()
+    
+    if opcion == "2":
+            mostrar_invenatrio()
         
-        if opcion == 2:
-                print("desahabilitado")
-        
-        if opcion == 3:
-                print("desahbilitado")
-        if opcion == 4:
-                print("desahabilitado")
-        
-        if opcion == 5:
-                print("desahbilitado")
-        if opcion == 6:
-                print("gracias por su uso")
-                break
+    if opcion == "3":
+            print("desahbilitado")
+    if opcion == "4":
+            print("desahabilitado")
+    
+    if opcion == "5":
+            print("desahbilitado")
+    if opcion == "6":
+            print("gracias por su uso")
+            break
         
                 
 
