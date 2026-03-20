@@ -23,27 +23,30 @@ def agregar_producto():
             break
         except ValueError:
             print("ingrese un valor correcto:")
-    while True:
-        costo_total = precio_producto * cantidad_producto
-        print(f"su producto es:{nombre_producto}")
-        print(f"el precio de su producto es ¿:{precio_producto}")
-        print(f"la cantidad que llevara es de:{cantidad_producto}")
-        print(f"su total a pagar es de {costo_total}")
-        break
-    
-    
-    
+
     
     producto = {
       "nombre" : nombre_producto,
       "precio": precio_producto,
       "cantidad": cantidad_producto,
-      "costo total": costo_total,
-
     }
     inventario.append(producto)
+    print("producto agregado correctamente")
 
+    
 def mostrar_invenatrio():
+    print("---INVENTARIO---")
+    if len (inventario) == 0:
+        print("inventario esta vacio")
+    else:
+        for producto in inventario:
+            print (f"producto:{producto['nombre']} | precio:{producto['precio']} | cantidad:{producto['cantidad']}" )
+            
+
+
+
+                
+
     
 
 
