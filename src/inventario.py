@@ -41,6 +41,18 @@ def mostrar_invenatrio():
     else:
         for producto in inventario:
             print (f"producto:{producto['nombre']} | precio:{producto['precio']} | cantidad:{producto['cantidad']}" )
+
+def calcular_estadistica():
+    if not inventario :
+        print("no hay producto para calcular la estadistica")
+    for producto in inventario:
+        valor_total = sum(producto ['precio'] for producto in inventario *producto['cantidad'] for producto in inventario)
+        cantidad_total = sum(producto['cantidad'] for producto in inventario) 
+    print("-----Estadiaticas del inventario-----")
+    print(f"El valor total del inventario es de{valor_total}")
+    print (f"la cantidad de producto es {cantidad_total}")
+        
+
             
 
 
